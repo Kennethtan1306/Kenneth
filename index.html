@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kenneth</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --accent: #2563eb;
+      --bg: #f4f4f5;
+      --text: #111827;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      background: white;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 1.5rem 1rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem 2rem;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: center;
+      margin-top: 1rem;
+    }
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+    }
+    h1 {
+      margin: 0 0 .2rem;
+      font-size: 2rem;
+    }
+    .tagline {
+      color: #4b5563;
+      margin: 0 0 .5rem;
+    }
+    .pill {
+      display: inline-block;
+      padding: .25rem .75rem;
+      border-radius: 999px;
+      background: #dbeafe;
+      color: #1d4ed8;
+      font-size: .85rem;
+      margin-right: .5rem;
+      margin-bottom: .5rem;
+    }
+    section {
+      background: white;
+      margin-top: 1.5rem;
+      padding: 1.25rem 1.5rem;
+      border-radius: .75rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+    section h2 {
+      margin-top: 0;
+      font-size: 1.25rem;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: .5rem;
+      margin-bottom: .75rem;
+    }
+    .project {
+      margin-bottom: 1rem;
+    }
+    .project img {
+      width: 100%;
+      max-width: 480px;
+      border-radius: .5rem;
+      margin-top: .5rem;
+    }
+    .meta {
+      font-size: .9rem;
+      color: #6b7280;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 640px) {
+      .hero {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container hero">
+      <!-- This image will come from images/profile.jpg -->
+      <img src="images/profile.jpg" alt="Your Name" class="profile-photo">
+      <div>
+        <h1>Your Name</h1>
+        <p class="tagline">Aspiring FinTech &amp; Data Professional | E-commerce &amp; Operations</p>
+        <div>
+          <span class="pill">FinTech</span>
+          <span class="pill">E-commerce Ops</span>
+          <span class="pill">Process Improvement</span>
+        </div>
+        <p class="meta">
+          Email: <a href="mailto:you@example.com">you@example.com</a> ·
+          <a href="https://www.linkedin.com/in/your-link" target="_blank">LinkedIn</a> ·
+          <a href="CV.pdf" target="_blank">Download CV</a>
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Short paragraph about who you are, what you’re doing now, and what roles you’re targeting.</p>
+      <p><strong>What I’m like to work with:</strong></p>
+      <ul>
+        <li>Example: I enjoy fixing messy processes and making them more efficient.</li>
+        <li>Example: I’m comfortable with data but also like talking to people.</li>
+        <li>Example: I learn quickly and don’t mind starting from zero with new tools.</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>Experience Snapshot</h2>
+      <p><strong>Quality &amp; Process Supervisor – Company Name</strong> (2021–Present)</p>
+      <ul>
+        <li>Bullet point about impact/result.</li>
+        <li>Bullet point about tools/skills you used.</li>
+      </ul>
+      <p><strong>Previous Role – Company Name</strong></p>
+      <ul>
+        <li>Another 1–2 bullets max.</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects for Interviewers</h2>
+
+      <div class="project">
+        <h3>Project Title (e.g., Cybersecurity Budget Proposal for Bank)</h3>
+        <p class="meta">University Project · 2024 · Tools: Excel, PowerPoint, …</p>
+        <p><strong>Problem:</strong> One–two sentences about the situation you were solving.</p>
+        <p><strong>What I did:</strong> Your role, key steps, and decisions.</p>
+        <p><strong>Outcome / Learning:</strong> Result or what you learned.</p>
+        <!-- Screenshot of project -->
+        <img src="images/project1.png" alt="Screenshot of project 1">
+      </div>
+
+      <div class="project">
+        <h3>Project Title 2</h3>
+        <p class="meta">Work / Personal Project · Tools: …</p>
+        <p>Same structure as above.</p>
+        <img src="images/project2.png" alt="Screenshot of project 2">
+      </div>
+    </section>
+
+    <section id="interviewers">
+      <h2>For Interviewers</h2>
+      <p><strong>If you’re preparing to interview me, this might help:</strong></p>
+      <ul>
+        <li>Best topics to ask me about (e.g., improving operations, working with data, process design).</li>
+        <li>What I’m excited to learn in your team.</li>
+        <li>How I usually ramp up in a new environment.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can reach me at <a href="mailto:you@example.com">Kenneth.tan06@yahoo.com</a> or on <a href="https://www.linkedin.com/in/your-link" target="_blank">LinkedIn</a>.</p>
+    </section>
+  </main>
+</body>
+</html>
